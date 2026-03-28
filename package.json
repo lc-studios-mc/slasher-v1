@@ -1,0 +1,18 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "bun ./scripts/cli/build.ts",
+		"clean": "bun exec \"rm -rf dist\"",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@fastify/deepmerge": "^3.2.1",
+		"@minecraft/server": "2.5.0",
+		"@types/bun": "latest",
+		"gl-matrix": "^3.4.4",
+		"p-debounce": "^5.1.0",
+		"prettier": "^3.8.1",
+		"typescript": "^5.9.3"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"extends": "../tsconfig.base.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"target": "esnext",
+		"lib": ["esnext"],
+		"types": ["bun"],
+		"paths": {
+			"@/*": ["./*"]
+		}
+	}
+}
