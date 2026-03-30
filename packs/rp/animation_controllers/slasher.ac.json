@@ -1,0 +1,17 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.slasher.slasher.fp": {
+			"initial_state": "pick",
+			"states": {
+				"pick": {
+					"animations": ["anim.fp.pick"],
+					"transitions": [{ "idle": "q.all_animations_finished" }]
+				},
+				"idle": {
+					"animations": ["anim.fp.idle"]
+				}
+			}
+		}
+	}
+}

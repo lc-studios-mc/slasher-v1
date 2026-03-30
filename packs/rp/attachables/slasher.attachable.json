@@ -1,0 +1,43 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "slasher:slasher",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"slasher": "textures/slasher/slasher",
+				"fp_arms": "textures/slasher/fp_arms"
+			},
+			"geometry": {
+				"fp": "geometry.slasher.slasher.fp",
+				"fp_arms": "geometry.slasher.fp_arms",
+				"fp_testing": "geometry.slasher.slasher.fp_testing",
+				"tp": "geometry.slasher.slasher.tp"
+			},
+			"animations": {
+				"ctrl.fp": "controller.animation.slasher.slasher.fp",
+
+				"anim.fp.base_pose": "animation.slasher.slasher.fp.base_pose",
+				"anim.fp.pick": "animation.slasher.slasher.fp.pick",
+				"anim.fp.idle": "animation.slasher.slasher.fp.idle",
+
+				"anim.tp.offset": "animation.slasher.slasher.tp.offset"
+			},
+			"scripts": {
+				"animate": [
+					"ctrl.fp",
+					{
+						"anim.tp.offset": "!c.is_first_person"
+					}
+				]
+			},
+			"render_controllers": [
+				{ "controller.render.slasher.slasher.fp": "c.is_first_person" },
+				{ "controller.render.slasher.fp_arms": "c.is_first_person" },
+				{ "controller.render.slasher.slasher.tp": "!c.is_first_person" }
+			]
+		}
+	}
+}

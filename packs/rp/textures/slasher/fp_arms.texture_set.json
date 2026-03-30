@@ -1,0 +1,7 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "fp_arms",
+		"metalness_emissive_roughness": "fp_arms_mer"
+	}
+}
