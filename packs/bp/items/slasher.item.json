@@ -1,0 +1,32 @@
+{
+	"format_version": "1.26.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "slasher:slasher",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": "sword",
+			"minecraft:glint": true,
+			"minecraft:rarity": "epic",
+			"minecraft:damage": 10,
+			"minecraft:piercing_weapon": {
+				"reach": {
+					"min": 0.0,
+					"max": 0.0
+				},
+				"creative_reach": {
+					"min": 0.0,
+					"max": 0.0
+				},
+				"hitbox_margin": 0
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:swing_duration": {
+				"value": 0.5
+			}
+		}
+	}
+}
