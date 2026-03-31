@@ -189,6 +189,38 @@
 					"position": [4, -5, 18]
 				}
 			}
+		},
+		"animation.slasher.slasher.fp.slash_2.miss": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"fp_mainhand_g": {
+					"rotation": {
+						"0.0": [0, -80, 0],
+						"0.1771": [0, 120, 0]
+					},
+					"position": {
+						"0.0": [42, 9, 7],
+						"0.1771": [-10, 9, 16]
+					}
+				},
+				"fp_root": {
+					"position": [0, 13, -26]
+				},
+				"fp_arms": {
+					"position": [-13, 0, 7]
+				},
+				"fp_offhand": {
+					"rotation": [0, 90, 0],
+					"position": [4, -5, 18]
+				},
+				"fp_mainhand": {
+					"rotation": [-22.6745, -6.9261, 2.8841]
+				},
+				"fp_mainhand_item": {
+					"rotation": [0, 10, -5]
+				}
+			}
 		}
 	}
 }
