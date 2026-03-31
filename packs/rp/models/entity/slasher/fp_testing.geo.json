@@ -6,8 +6,8 @@
 				"identifier": "geometry.slasher.slasher.fp_testing",
 				"texture_width": 64,
 				"texture_height": 64,
-				"visible_bounds_width": 5,
-				"visible_bounds_height": 4.5,
+				"visible_bounds_width": 10,
+				"visible_bounds_height": 10,
 				"visible_bounds_offset": [0, 1.75, 0]
 			},
 			"bones": [
@@ -46,6 +46,19 @@
 								"west": {"uv": [0, 0], "uv_size": [0.25, 0.25]},
 								"up": {"uv": [0.25, 0.25], "uv_size": [-0.25, -0.25]},
 								"down": {"uv": [0.25, 0.25], "uv_size": [-0.25, -0.25]}
+							}
+						},
+						{
+							"origin": [-7, 0, -5],
+							"size": [4, 1, 2],
+							"inflate": 0.1,
+							"uv": {
+								"north": {"uv": [28.5, 14.75], "uv_size": [0.25, 0.25]},
+								"east": {"uv": [28.5, 14.75], "uv_size": [0.25, 0.25]},
+								"south": {"uv": [28.5, 14.75], "uv_size": [0.25, 0.25]},
+								"west": {"uv": [28.5, 14.75], "uv_size": [0.25, 0.25]},
+								"up": {"uv": [28.75, 15], "uv_size": [-0.25, -0.25]},
+								"down": {"uv": [28.75, 15], "uv_size": [-0.25, -0.25]}
 							}
 						}
 					]
@@ -1062,6 +1075,19 @@
 								"west": {"uv": [0, 0], "uv_size": [0.25, 0.25]},
 								"up": {"uv": [0.25, 0.25], "uv_size": [-0.25, -0.25]},
 								"down": {"uv": [0.25, 0.25], "uv_size": [-0.25, -0.25]}
+							}
+						},
+						{
+							"origin": [3, 0, -5],
+							"size": [4, 1, 2],
+							"inflate": 0.1,
+							"uv": {
+								"north": {"uv": [28.5, 14.75], "uv_size": [0.25, 0.25]},
+								"east": {"uv": [28.5, 14.75], "uv_size": [0.25, 0.25]},
+								"south": {"uv": [28.5, 14.75], "uv_size": [0.25, 0.25]},
+								"west": {"uv": [28.5, 14.75], "uv_size": [0.25, 0.25]},
+								"up": {"uv": [28.75, 15], "uv_size": [-0.25, -0.25]},
+								"down": {"uv": [28.75, 15], "uv_size": [-0.25, -0.25]}
 							}
 						}
 					]
