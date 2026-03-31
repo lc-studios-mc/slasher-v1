@@ -22,6 +22,8 @@
 				"anim.fp.base_pose": "animation.slasher.slasher.fp.base_pose",
 				"anim.fp.pick": "animation.slasher.slasher.fp.pick",
 				"anim.fp.idle": "animation.slasher.slasher.fp.idle",
+				"anim.fp.crank": "animation.slasher.slasher.fp.crank",
+				"anim.fp.slash_1": "animation.slasher.slasher.fp.slash_1",
 
 				"anim.tp.offset": "animation.slasher.slasher.tp.offset"
 			},
