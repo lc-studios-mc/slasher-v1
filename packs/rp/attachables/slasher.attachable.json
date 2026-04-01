@@ -34,6 +34,12 @@
 					{
 						"anim.tp.offset": "!c.is_first_person"
 					}
+				],
+				"pre_animation": [
+					"v.cd_pick = q.cooldown_time_remaining('slasher_pick');",
+					"v.cd_crank = q.cooldown_time_remaining('slasher_crank');",
+					"v.cd_slash_1 = q.cooldown_time_remaining('slasher_slash_1');",
+					"v.cd_slash_2 = q.cooldown_time_remaining('slasher_slash_2');"
 				]
 			},
 			"render_controllers": [
