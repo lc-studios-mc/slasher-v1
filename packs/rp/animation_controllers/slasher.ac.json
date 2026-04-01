@@ -6,10 +6,48 @@
 			"states": {
 				"pick": {
 					"animations": ["anim.fp.pick"],
-					"transitions": [{ "idle": "q.all_animations_finished" }]
+					"transitions": [
+						{ "idle": "q.all_animations_finished" },
+						{ "crank": "v.cd_crank" },
+						{ "slash_1": "v.cd_slash_1" },
+						{ "slash_2": "v.cd_slash_2" }
+					]
 				},
 				"idle": {
-					"animations": ["anim.fp.idle"]
+					"animations": ["anim.fp.idle"],
+					"transitions": [
+						{ "pick": "v.cd_pick" },
+						{ "crank": "v.cd_crank" },
+						{ "slash_1": "v.cd_slash_1" },
+						{ "slash_2": "v.cd_slash_2" }
+					]
+				},
+				"crank": {
+					"animations": ["anim.fp.slash_1"],
+					"transitions": [
+						{ "pick": "v.cd_pick" },
+						{ "idle": "q.all_animations_finished" },
+						{ "slash_1": "v.cd_slash_1" },
+						{ "slash_2": "v.cd_slash_2" }
+					]
+				},
+				"slash_1": {
+					"animations": ["anim.fp.slash_1"],
+					"transitions": [
+						{ "pick": "v.cd_pick" },
+						{ "idle": "q.all_animations_finished" },
+						{ "crank": "v.cd_crank" },
+						{ "slash_2": "v.cd_slash_2" }
+					]
+				},
+				"slash_2": {
+					"animations": ["anim.fp.slash_2"],
+					"transitions": [
+						{ "pick": "v.cd_pick" },
+						{ "idle": "q.all_animations_finished" },
+						{ "crank": "v.cd_crank" },
+						{ "slash_1": "v.cd_slash_1" }
+					]
 				}
 			}
 		}
