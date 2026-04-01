@@ -23,10 +23,6 @@
 				"anim.fp.pick": "animation.slasher.slasher.fp.pick",
 				"anim.fp.idle": "animation.slasher.slasher.fp.idle",
 				"anim.fp.crank": "animation.slasher.slasher.fp.crank",
-				"anim.fp.slash_1.miss": "animation.slasher.slasher.fp.slash_1.miss",
-				"anim.fp.slash_1.hit": "animation.slasher.slasher.fp.slash_1.hit",
-				"anim.fp.slash_2.miss": "animation.slasher.slasher.fp.slash_2.miss",
-				"anim.fp.slash_2.hit": "animation.slasher.slasher.fp.slash_2.hit",
 
 				"anim.tp.offset": "animation.slasher.slasher.tp.offset"
 			},
