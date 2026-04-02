@@ -26,6 +26,7 @@
 				"anim.fp.slash_1": "animation.slasher.slasher.fp.slash_1",
 				"anim.fp.slash_2": "animation.slasher.slasher.fp.slash_2",
 				"anim.fp.saw.start": "animation.slasher.slasher.fp.saw.start",
+				"anim.fp.saw.end_soft": "animation.slasher.slasher.fp.saw.end_soft",
 
 				"anim.tp.offset": "animation.slasher.slasher.tp.offset"
 			},
