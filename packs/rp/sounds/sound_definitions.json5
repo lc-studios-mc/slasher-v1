@@ -1,0 +1,27 @@
+{
+	format_version: "1.20.20",
+	sound_definitions: {
+		"slasher.slasher.crack": {
+			category: "hostile",
+			max_distance: null,
+			min_distance: null,
+			sounds: [
+				{
+					name: "sounds/slasher/slasher/crack",
+					volume: 1.0,
+				},
+			],
+		},
+		"slasher.slasher.slash": {
+			category: "hostile",
+			max_distance: null,
+			min_distance: null,
+			sounds: [
+				{
+					name: "sounds/slasher/slasher/slash",
+					volume: 0.7,
+				},
+			],
+		},
+	},
+}
