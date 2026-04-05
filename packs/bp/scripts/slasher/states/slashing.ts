@@ -2,6 +2,7 @@ import * as mc from "@minecraft/server";
 import { SlasherState } from "./base";
 import { COOLDOWN_IDS } from "../cooldown";
 import { IdleState } from "./idle";
+import { randomFloat } from "@/math";
 
 const ALLOW_RESTART_THLD = 0.3 * mc.TicksPerSecond;
 const EXIT_THLD = 0.4 * mc.TicksPerSecond;
@@ -11,6 +12,11 @@ export class SlashingState extends SlasherState {
 	private _restartQueued = false;
 
 	override onEnter(): void {
+		this.s.dimension.playSound("slasher.slasher.slash", this.s.getFaceLocation(), {
+			volume: 1.5,
+			pitch: randomFloat(0.93, 1.07),
+		});
+
 		if (this._animIndex === 0) {
 			this.s.player.startItemCooldown(COOLDOWN_IDS.SLASH_2, 0);
 			this.s.player.startItemCooldown(COOLDOWN_IDS.SLASH_1, 2);

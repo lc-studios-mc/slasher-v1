@@ -1,9 +1,9 @@
 import { SessionHandler } from "@/item_session/handler";
 import { registerItemSession, type SessionContext } from "@/item_session/manager";
 import * as mc from "@minecraft/server";
+import { COOLDOWN_IDS } from "./cooldown";
 import type { SlasherState } from "./states/base";
 import { IdleState } from "./states/idle";
-import { COOLDOWN_IDS } from "./cooldown";
 
 registerItemSession({
 	itemTypeId: "slasher:slasher",
@@ -28,6 +28,16 @@ export class SlasherHandler extends SessionHandler {
 		this._currentState.onExit();
 		this._currentState = to;
 		this._currentState.onEnter();
+	}
+
+	getFaceLocation(): mc.Vector3 {
+		const headLoc = this.player.getHeadLocation();
+		const viewDir = this.player.getViewDirection();
+		return {
+			x: headLoc.x + viewDir.x,
+			y: headLoc.y + viewDir.y,
+			z: headLoc.z + viewDir.z,
+		};
 	}
 
 	protected override onTick(): void {
