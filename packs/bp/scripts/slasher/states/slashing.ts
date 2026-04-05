@@ -2,7 +2,7 @@ import * as mc from "@minecraft/server";
 import { SlasherState } from "./base";
 import { COOLDOWN_IDS } from "../cooldown";
 import { IdleState } from "./idle";
-import { randomFloat } from "@/math";
+import { randomFloat } from "@/lib/math";
 
 const ALLOW_RESTART_THLD = 0.3 * mc.TicksPerSecond;
 const EXIT_THLD = 0.4 * mc.TicksPerSecond;

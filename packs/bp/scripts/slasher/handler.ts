@@ -1,5 +1,5 @@
-import { SessionHandler } from "@/item_session/handler";
-import { registerItemSession, type SessionContext } from "@/item_session/manager";
+import { SessionHandler } from "@/lib/item_session/handler";
+import { registerItemSession, type SessionContext } from "@/lib/item_session/manager";
 import * as mc from "@minecraft/server";
 import { COOLDOWN_IDS } from "./cooldown";
 import type { SlasherState } from "./states/base";
