@@ -11,7 +11,8 @@
 						{ "crank": "v.cd_crank" },
 						{ "slash_1": "v.cd_slash_1" },
 						{ "slash_2": "v.cd_slash_2" }
-					]
+					],
+					"blend_transition": 0.05
 				},
 				"idle": {
 					"animations": ["anim.fp.idle"],
@@ -20,7 +21,8 @@
 						{ "crank": "v.cd_crank" },
 						{ "slash_1": "v.cd_slash_1" },
 						{ "slash_2": "v.cd_slash_2" }
-					]
+					],
+					"blend_transition": 0.05
 				},
 				"crank": {
 					"animations": ["anim.fp.slash_1"],
@@ -34,8 +36,7 @@
 				"slash_1": {
 					"animations": ["anim.fp.slash_1"],
 					"transitions": [
-						{ "pick": "v.cd_pick" },
-						{ "idle": "q.all_animations_finished" },
+						{ "pick": "v.cd_pick || q.all_animations_finished" },
 						{ "crank": "v.cd_crank" },
 						{ "slash_2": "v.cd_slash_2" }
 					]
@@ -43,7 +44,7 @@
 				"slash_2": {
 					"animations": ["anim.fp.slash_2"],
 					"transitions": [
-						{ "pick": "v.cd_pick" },
+						{ "pick": "v.cd_pick || q.all_animations_finished" },
 						{ "idle": "q.all_animations_finished" },
 						{ "crank": "v.cd_crank" },
 						{ "slash_1": "v.cd_slash_1" }
