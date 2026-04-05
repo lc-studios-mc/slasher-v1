@@ -30,9 +30,10 @@ export class SlasherHandler extends SessionHandler {
 		this._currentState.onEnter();
 	}
 
-	getFaceLocation(): mc.Vector3 {
-		const headLoc = this.player.getHeadLocation();
-		const viewDir = this.player.getViewDirection();
+	getFaceLocation(
+		headLoc = this.player.getHeadLocation(),
+		viewDir = this.player.getViewDirection(),
+	): mc.Vector3 {
 		return {
 			x: headLoc.x + viewDir.x,
 			y: headLoc.y + viewDir.y,

@@ -8,26 +8,10 @@
 				"texture": "textures/slasher/square"
 			}
 		},
-		"curves": {
-			"variable.offset_curve": {
-				"type": "bezier_chain",
-				"input": "v.emitter_age / v.emitter_lifetime",
-				"nodes": {
-					"0.0": {
-						"value": 0,
-						"slope": 2.05
-					},
-					"1.0": {
-						"value": 1,
-						"slope": 0.1
-					}
-				}
-			}
-		},
 		"components": {
 			"minecraft:emitter_initialization": {
 				"creation_expression": "v.dir_x = 0;v.dir_y = 0;v.dir_z = 0;",
-				"per_update_expression": "v.offset_move = v.offset_curve;"
+				"per_update_expression": "v.offset_move = v.emitter_age / v.emitter_lifetime;"
 			},
 			"minecraft:emitter_rate_steady": {
 				"spawn_rate": 100,
