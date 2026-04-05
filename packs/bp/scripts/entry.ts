@@ -1,3 +1,3 @@
 // Entry point
 
-import "./slasher/handler";
+import "./features/slasher/handler";
